@@ -1,1 +1,24 @@
-spring.application.name=spring-security
+spring:
+  application:
+    name: spring-security-things
+
+  thymeleaf:
+    cache: false
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: <PLACEHOLDER>
+            client-secret: <PLACEHOLDER>
+
+server:
+  address: 127.0.0.1
+  servlet:
+    session:
+      persistent: false
+
+#logging:
+#  level:
+#    org.springframework.security: TRACE
